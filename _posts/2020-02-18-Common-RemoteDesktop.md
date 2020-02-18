@@ -6,7 +6,7 @@ date:   2020.02.18.
 writer: "하선호"
 categories: Common
 ---
----
+
 ## 시작하기
 ---
 1. 원격 대상 / 원격 사용 PC 모두 크롬 브라우저가 설치되어 있어야 합니다.
@@ -61,6 +61,6 @@ categories: Common
 ---
 1. <b>접속할 컴퓨터의 크롬 원격 데스크톱에서 핀 번호를 입력하여 접속합니다.(원격 대상과 동일한 구글 계정으로 로그인 해야합니다.) </b>
   ![/images/2020-02-18-Common-RemoteDesktop/c1.png](/images/2020-02-18-Common-RemoteDesktop/c1.png) 
-
+---
 ### 참고 자료
 - https://support.google.com/chrome/answer/1649523?co=GENIE.Platform%3DDesktop&hl=ko
