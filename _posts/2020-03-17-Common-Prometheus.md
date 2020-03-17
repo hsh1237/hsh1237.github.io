@@ -217,6 +217,7 @@ Creating grafana       ... done
 
 4. /usr/local/bin/node_exporter --web.listen-address=:9110
 ```
+
 - 확인 : http://prom1.danawa.com:9110/metrics - 기본포트 9100
 
 ![/images/2020-03-17-Common-Prometheus/node_exporter.PNG](/images/2020-03-17-Common-Prometheus/node_exporter.PNG)   
