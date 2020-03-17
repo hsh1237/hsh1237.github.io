@@ -27,6 +27,7 @@ categories: Common
 
 ### 2. docker-compose.yml 작성
 - 공식적으로 설정된 포트들이 이미 사용중임에 따라 다른 포트로 대체하였습니다.
+
 ```
 version: '3.7'
 services:
@@ -78,8 +79,8 @@ services:
 
 networks:
   prometheus-network:
-
 ```
+
 - 프로메테우스의 모든 컴포넌트는 컨테이너로 실행할 수 있지만 도커에서 노드 익스포터를 실행하는 것은 권장하지 않는다고 합니다. 이유는 도커는 머신의 내부동작과 컨테이너를 격리시키려고 하기 때문에 노드 익스포터에서 내부 동작 결과가 잘동작하지 않을 수 있기 때문입니다.
 
 ### 3. prometheus.config 작성
@@ -91,9 +92,10 @@ networks:
     scrape_interval: 10s # 주기
     static_configs:      # 익스포트 프로세스 설정
     - targets: ['{host}:{port}','{host}:{port}']
-
 ```
+
 prometheus.config
+
 ```
 # my global config
 global:
@@ -139,7 +141,9 @@ scrape_configs:
     - targets: ['{host}:{port}']
 
 ```
+
 ### 4. docker-compose 실행
+
 ```
 docker-compose up -d
 
@@ -150,7 +154,9 @@ Creating prometheus    ... done
 Creating grafana       ... done
 
 ```
+
 ### 5. node-exporter 설치
+
 ```
 ## 사용버전 0.18.1
 ## node-exporter의 기본 포트는 9100이지만 구성 환경에서 이미 사용중인 포트이므로 임의의 포트로 설정하여 기동하였습니다.
