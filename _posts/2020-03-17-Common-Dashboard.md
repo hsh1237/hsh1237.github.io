@@ -29,6 +29,7 @@ categories: Common
 
 - 프로메테우스 서버 정보를 입력한 후 하단의 Save&Test를 클릭합니다.
   - 연결테스트 후 이상이 없다면 저장됩니다.
+
 ![/images/2020-03-17-Common-Dashborad/grafana_3.PNG](/images/2020-03-17-Common-Dashboard/grafana_3.PNG) 
 
 ### 2. 대시 보드 생성
